@@ -1,0 +1,2 @@
+Lickometer_15ga is a revision for use with a drink tube cut from 15-gage hypodermic steel tubing. The original version uses 16-gage tubing.
+The 15ga file includes a 3D printable sheath to protect the sensors
