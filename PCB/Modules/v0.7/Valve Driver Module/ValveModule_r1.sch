@@ -7804,11 +7804,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-2.54" y1="119.38" x2="203.2" y2="119.38" width="1.016" layer="94" style="longdash"/>
 <text x="25.4" y="228.6" size="5.08" layer="94" font="vector">UART/RS485 and MCU power interface</text>
 <text x="238.76" y="228.6" size="5.08" layer="94" font="vector">Isolated valve driver IC</text>
-<text x="28.448" y="24.384" size="5.08" layer="94" font="vector">Please read GPL v3.0 for license terms. http//www.gnu.org/licenses/gpl-3.0.en.html</text>
-<text x="1.778" y="34.29" size="5.08" layer="94" font="vector">NOTE: This design file is part of the Sanworks Bpod repository. (C) 2016 Sanworks LLC</text>
+<text x="28.448" y="24.384" size="3.81" layer="94" font="vector">Please read GPL v3.0 for license terms. http//www.gnu.org/licenses/gpl-3.0.en.html</text>
+<text x="1.778" y="34.29" size="3.81" layer="94" font="vector">NOTE: This design file is part of the Sanworks Bpod-CAD repository. (C) 2016 Sanworks LLC</text>
 <wire x1="203.2" y1="119.38" x2="375.92" y2="119.38" width="1.016" layer="94" style="longdash"/>
 <text x="284.48" y="8.89" size="3.81" layer="94" font="vector">Sanworks LLC</text>
-<text x="1.778" y="1.016" size="5.08" layer="94" font="vector">http://github.com/sanworks/Bpod</text>
+<text x="1.778" y="1.016" size="5.08" layer="94" font="vector">http://github.com/sanworks/Bpod-CAD</text>
 </plain>
 <instances>
 <instance part="J10" gate="G$1" x="73.66" y="165.1" rot="R180"/>

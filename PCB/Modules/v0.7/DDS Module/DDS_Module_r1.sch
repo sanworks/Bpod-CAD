@@ -5559,13 +5559,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="101.6" y="190.5" size="1.778" layer="91">RX2</text>
 <wire x1="20.32" y1="236.22" x2="20.32" y2="114.3" width="1.016" layer="94" style="longdash"/>
 <wire x1="20.32" y1="114.3" x2="20.32" y2="81.28" width="1.016" layer="94" style="longdash"/>
-<wire x1="20.32" y1="81.28" x2="20.32" y2="-17.78" width="1.016" layer="94" style="longdash"/>
+<wire x1="20.32" y1="81.28" x2="20.32" y2="33.02" width="1.016" layer="94" style="longdash"/>
 <wire x1="20.32" y1="114.3" x2="-129.54" y2="114.3" width="1.016" layer="94" style="longdash"/>
 <text x="-116.84" y="223.52" size="5.08" layer="94">Bpod State Machine UART Port + Power</text>
 <text x="-96.52" y="99.06" size="5.08" layer="94">Input Module UART Port</text>
 <text x="99.06" y="220.98" size="5.08" layer="94">DDS + Oscillator + DAC</text>
 <wire x1="20.32" y1="81.28" x2="248.92" y2="81.28" width="1.016" layer="94" style="longdash"/>
 <text x="101.6" y="66.04" size="5.08" layer="94">Power + DDS Decoupling</text>
+<text x="-123.952" y="12.954" size="3.81" layer="94" font="vector">Please read GPL v3.0 for license terms. http//www.gnu.org/licenses/gpl-3.0.en.html</text>
+<text x="-125.222" y="20.32" size="3.81" layer="94" font="vector">NOTE: This design file is part of the Sanworks Bpod-CAD repository. (C) 2017 Sanworks LLC</text>
+<text x="-120.142" y="-0.254" size="5.08" layer="94" font="vector">http://github.com/sanworks/Bpod-CAD</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-88.9" y="170.18" rot="R180"/>
@@ -5579,10 +5582,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="J4" gate="G$1" x="93.98" y="195.58" rot="MR270"/>
 <instance part="J7" gate="G$1" x="-33.02" y="195.58" rot="R180"/>
 <instance part="J5" gate="G$1" x="-12.7" y="157.48" rot="R90"/>
-<instance part="H1" gate="G$1" x="27.94" y="-2.54"/>
-<instance part="H2" gate="G$1" x="53.34" y="-2.54"/>
-<instance part="H3" gate="G$1" x="78.74" y="-2.54"/>
-<instance part="H4" gate="G$1" x="104.14" y="-2.54"/>
+<instance part="H1" gate="G$1" x="27.94" y="-7.62"/>
+<instance part="H2" gate="G$1" x="53.34" y="-7.62"/>
+<instance part="H3" gate="G$1" x="78.74" y="-7.62"/>
+<instance part="H4" gate="G$1" x="104.14" y="-7.62"/>
 <instance part="J6" gate="G$1" x="-73.66" y="200.66" rot="R270"/>
 <instance part="IC2" gate="G$1" x="-99.06" y="198.12"/>
 <instance part="C4" gate="G$1" x="-86.36" y="195.58" rot="R180"/>

@@ -5860,7 +5860,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-70.612" y="24.638" size="1.778" layer="97">SPI_MOSI</text>
 <wire x1="-147.574" y1="-1.524" x2="-22.86" y2="-1.524" width="0.1524" layer="94" style="longdash"/>
 <text x="-258.572" y="-117.856" size="5.08" layer="94" font="vector">Please read GPL v3.0 for license terms. http//www.gnu.org/licenses/gpl-3.0.en.html</text>
-<text x="-285.242" y="-107.95" size="5.08" layer="94" font="vector">NOTE: This design file is part of the Sanworks Bpod repository. (C) 2016 Sanworks LLC</text>
+<text x="-285.242" y="-107.95" size="5.08" layer="94" font="vector">NOTE: This design file is part of the Sanworks Bpod-CAD repository. (C) 2017 Sanworks LLC</text>
 <text x="-279.908" y="-13.208" size="5.08" layer="94" font="vector">Wire Terminals / Optoisolator</text>
 <wire x1="-22.86" y1="-1.524" x2="-22.86" y2="66.04" width="0.1524" layer="94" style="longdash"/>
 <wire x1="-289.56" y1="-91.44" x2="-147.574" y2="-91.44" width="0.1524" layer="94" style="longdash"/>
@@ -5913,7 +5913,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="217.678" y="170.18" size="1.778" layer="95" rot="R270">LED_Blue</text>
 <text x="217.932" y="145.796" size="1.778" layer="95" rot="R270">LED_Red</text>
 <text x="200.152" y="172.212" size="1.778" layer="95" rot="R270">LED_Green</text>
-<text x="19.558" y="-197.104" size="5.08" layer="94" font="vector">http://github.com/sanworks/Bpod</text>
+<text x="1.778" y="-192.024" size="5.08" layer="94" font="vector">http://github.com/sanworks/Bpod-CAD</text>
 <text x="234.95" y="-101.854" size="5.08" layer="94" font="vector">Holes</text>
 <text x="-134.62" y="-27.686" size="1.778" layer="95" rot="R180">Upper 5V</text>
 <text x="-132.08" y="-32.766" size="1.778" layer="95" rot="R180">BNC_OUT2</text>

@@ -3993,9 +3993,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-25.4" y="-55.88" size="5.08" layer="94" font="vector">3V Reference IC</text>
 <text x="180.34" y="-53.34" size="5.08" layer="94" font="vector">Ground plane bridge</text>
 <text x="-88.392" y="-150.876" size="3.81" layer="94" font="vector">Please read GPL v3.0 for license terms. http//www.gnu.org/licenses/gpl-3.0.en.html</text>
-<text x="-89.662" y="-143.51" size="3.81" layer="94" font="vector">NOTE: This design file is part of the Sanworks Bpod repository. (C) 2017 Sanworks LLC</text>
+<text x="-89.662" y="-143.51" size="3.81" layer="94" font="vector">NOTE: This design file is part of the Sanworks Bpod-CAD repository. (C) 2017 Sanworks LLC</text>
 <text x="228.6" y="-143.51" size="5.08" layer="94" font="vector">Sanworks LLC</text>
-<text x="-89.662" y="-164.084" size="5.08" layer="94" font="vector">http://github.com/sanworks/Bpod</text>
+<text x="-89.662" y="-164.084" size="5.08" layer="94" font="vector">http://github.com/sanworks/Bpod-CAD</text>
 <wire x1="-96.52" y1="-134.62" x2="220.98" y2="-134.62" width="0.762" layer="94" style="longdash"/>
 </plain>
 <instances>
