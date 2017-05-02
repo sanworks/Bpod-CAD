@@ -1,0 +1,1 @@
+Note: BpodEnclosure r0_7_1 fits both Bpod state machine r0.7 and r0.8.
