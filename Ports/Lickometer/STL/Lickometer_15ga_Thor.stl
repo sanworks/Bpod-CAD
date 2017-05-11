@@ -1,4 +1,4 @@
-solid Lickometer_15ga
+solid Lickometer_15ga_Thor
 facet normal -1.0 0.0 0.0
   outer loop
     vertex 2.5799999999999996 -1.762479051592436e-16 4.7
@@ -5011,4 +5011,4 @@ facet normal 0.0 0.0 -1.0
     vertex 1.5399999999999994 3.3999999999999986 4.299999999999998
   endloop
 endfacet
-endsolid Lickometer_15ga
+endsolid Lickometer_15ga_Thor
