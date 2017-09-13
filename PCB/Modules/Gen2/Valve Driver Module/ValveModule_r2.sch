@@ -7642,6 +7642,24 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MBR0520LT" prefix="D">
+<description>&lt;b&gt;SCHOTTKY BARRIER RECTIFIER&lt;/b&gt;&lt;p&gt;
+Source: http://onsemi.com .. MBR0520LT1-D.pdf</description>
+<gates>
+<gate name="G$1" symbol="D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="regulators">
@@ -7790,6 +7808,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C3" library="JoshParts10" deviceset="EEE-FK1H100UR" device=""/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
+<part name="D2" library="diode" deviceset="MBR0520LT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7799,7 +7818,7 @@ DIN A3, landscape with location and doc. field</description>
 <text x="261.62" y="142.24" size="1.778" layer="91">GNDBB</text>
 <text x="307.086" y="160.274" size="1.778" layer="91">GNDBB</text>
 <text x="320.04" y="205.74" size="1.778" layer="91">GNDBB</text>
-<text x="78.74" y="193.04" size="1.778" layer="97">5V</text>
+<text x="86.36" y="198.12" size="1.778" layer="97">5V</text>
 <wire x1="200.66" y1="248.92" x2="203.2" y2="119.38" width="1.016" layer="94" style="longdash"/>
 <wire x1="-2.54" y1="119.38" x2="203.2" y2="119.38" width="1.016" layer="94" style="longdash"/>
 <text x="25.4" y="228.6" size="5.08" layer="94" font="vector">UART/RS485 and MCU power interface</text>
@@ -7836,13 +7855,17 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="GND4" gate="1" x="261.62" y="157.48"/>
 <instance part="SUPPLY3" gate="G$1" x="269.24" y="210.82"/>
 <instance part="D1" gate="G$1" x="289.56" y="149.86" rot="R180"/>
-<instance part="J9" gate="G$1" x="88.9" y="195.58" rot="R270"/>
+<instance part="J9" gate="G$1" x="76.2" y="203.2" rot="R270"/>
 <instance part="IC2" gate="G$1" x="63.5" y="193.04"/>
-<instance part="C4" gate="G$1" x="76.2" y="190.5" rot="R180"/>
+<instance part="C4" gate="G$1" x="76.2" y="187.96" rot="R180"/>
 <instance part="C5" gate="G$1" x="50.8" y="190.5" rot="R180"/>
 <instance part="GND5" gate="1" x="63.5" y="180.34"/>
 <instance part="C3" gate="G$1" x="304.546" y="154.94" rot="R270"/>
 <instance part="FRAME1" gate="G$1" x="-7.62" y="-7.62"/>
+<instance part="D2" gate="G$1" x="83.82" y="193.04" smashed="yes">
+<attribute name="NAME" x="86.36" y="193.5226" size="1.778" layer="95"/>
+<attribute name="VALUE" x="86.36" y="190.7286" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7901,7 +7924,6 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="58.42" y1="182.88" x2="63.5" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="182.88" x2="76.2" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="182.88" x2="76.2" y2="185.42" width="0.1524" layer="91"/>
 <junction x="63.5" y="182.88"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
@@ -7993,10 +8015,8 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="147.32" y1="190.5" x2="142.24" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="OUT"/>
-<wire x1="76.2" y1="193.04" x2="78.74" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<junction x="76.2" y="193.04"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="86.36" y1="193.04" x2="86.36" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8241,21 +8261,31 @@ DIN A3, landscape with location and doc. field</description>
 <net name="N$24" class="0">
 <segment>
 <pinref part="J10" gate="G$1" pin="5"/>
-<pinref part="J9" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="165.1" x2="91.44" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="165.1" x2="91.44" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="165.1" x2="91.44" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="IN"/>
+<wire x1="91.44" y1="208.28" x2="50.8" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="208.28" x2="50.8" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<junction x="50.8" y="193.04"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="OUT"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="193.04" x2="76.2" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="J9" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="193.04" x2="76.2" y2="195.58" width="0.1524" layer="91"/>
+<junction x="76.2" y="193.04"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="J9" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="187.96" x2="83.82" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="187.96" x2="83.82" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="IN"/>
-<wire x1="83.82" y1="200.66" x2="50.8" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="200.66" x2="50.8" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<junction x="50.8" y="193.04"/>
+<pinref part="J9" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="195.58" x2="78.74" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="78.74" y1="193.04" x2="81.28" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

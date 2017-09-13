@@ -2941,6 +2941,68 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="diode">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOD123">
+<description>&lt;b&gt;Diode&lt;/b&gt;</description>
+<wire x1="-1.1" y1="0.7" x2="1.1" y2="0.7" width="0.254" layer="51"/>
+<wire x1="1.1" y1="0.7" x2="1.1" y2="-0.7" width="0.254" layer="51"/>
+<wire x1="1.1" y1="-0.7" x2="-1.1" y2="-0.7" width="0.254" layer="51"/>
+<wire x1="-1.1" y1="-0.7" x2="-1.1" y2="0.7" width="0.254" layer="51"/>
+<smd name="C" x="-1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
+<smd name="A" x="1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
+<text x="-1.1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
+<rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
+<rectangle x1="-1.05" y1="-0.65" x2="-0.15" y2="0.7" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="D">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
+<text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MBR0520LT" prefix="D">
+<description>&lt;b&gt;SCHOTTKY BARRIER RECTIFIER&lt;/b&gt;&lt;p&gt;
+Source: http://onsemi.com .. MBR0520LT1-D.pdf</description>
+<gates>
+<gate name="G$1" symbol="D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2976,12 +3038,13 @@ DIN A4, landscape with location and doc. field</description>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
+<part name="D1" library="diode" deviceset="MBR0520LT" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="124.46" y="68.58" size="1.778" layer="97">5V</text>
-<text x="60.96" y="119.38" size="1.778" layer="97">5V</text>
+<text x="66.04" y="121.92" size="1.778" layer="97">5V</text>
 <text x="3.048" y="6.604" size="2.54" layer="94" font="vector">Please read GPL v3.0 for license terms. http//www.gnu.org/licenses/gpl-3.0.en.html</text>
 <text x="1.778" y="11.43" size="2.54" layer="94" font="vector">NOTE: This design file is part of the Sanworks Bpod-CAD repository. (C) 2017 Sanworks LLC</text>
 <text x="1.778" y="-1.524" size="2.54" layer="94" font="vector">http://github.com/sanworks/Bpod-CAD</text>
@@ -3006,9 +3069,9 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="H2" gate="G$1" x="190.5" y="45.72"/>
 <instance part="H3" gate="G$1" x="190.5" y="53.34"/>
 <instance part="H4" gate="G$1" x="190.5" y="60.96"/>
-<instance part="J5" gate="G$1" x="71.12" y="121.92" rot="R270"/>
+<instance part="J5" gate="G$1" x="58.42" y="129.54" rot="R270"/>
 <instance part="IC2" gate="G$1" x="45.72" y="119.38"/>
-<instance part="C2" gate="G$1" x="58.42" y="116.84" rot="R180"/>
+<instance part="C2" gate="G$1" x="58.42" y="114.3" rot="R180"/>
 <instance part="C3" gate="G$1" x="33.02" y="116.84" rot="R180"/>
 <instance part="GND5" gate="1" x="45.72" y="106.68"/>
 <instance part="U$2" gate="G$1" x="226.06" y="119.38" rot="R270"/>
@@ -3016,6 +3079,9 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="SUPPLY3" gate="G$1" x="218.44" y="101.6"/>
 <instance part="J1" gate="G$1" x="193.04" y="73.66" rot="MR90"/>
 <instance part="FRAME1" gate="G$1" x="-7.62" y="-20.32"/>
+<instance part="D1" gate="G$1" x="63.5" y="116.84" smashed="yes">
+<attribute name="NAME" x="66.04" y="117.3226" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3055,7 +3121,6 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="40.64" y1="109.22" x2="45.72" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="109.22" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="109.22" x2="58.42" y2="111.76" width="0.1524" layer="91"/>
 <junction x="45.72" y="109.22"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
@@ -3149,30 +3214,20 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="129.54" y1="68.58" x2="124.46" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="OUT"/>
-<wire x1="58.42" y1="119.38" x2="60.96" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<junction x="58.42" y="119.38"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="5"/>
-<pinref part="J5" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="43.18" x2="73.66" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="66.04" y1="116.84" x2="66.04" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="114.3" x2="66.04" y2="127" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="IN"/>
-<wire x1="66.04" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="127" x2="33.02" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="137.16" x2="33.02" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="137.16" x2="33.02" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <junction x="33.02" y="119.38"/>
+<pinref part="U$1" gate="G$1" pin="5"/>
+<wire x1="68.58" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="137.16" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3200,6 +3255,23 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="203.2" y1="114.3" x2="203.2" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="4"/>
 <wire x1="203.2" y1="106.68" x2="187.96" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="OUT"/>
+<pinref part="J5" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="119.38" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="116.84" x2="58.42" y2="119.38" width="0.1524" layer="91"/>
+<junction x="58.42" y="119.38"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="J5" gate="G$1" pin="2"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="60.96" y1="116.84" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
