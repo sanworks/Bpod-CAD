@@ -1,0 +1,1 @@
+Note: This is an obsolete design that does not match the BOM on the wiki.
