@@ -1,3 +1,0 @@
-This design is a 3D printable sheet of plastic to fix under the PocketStateMachine board. This will insulate the board's bottom-side electrical contacts from short circuits, if the board is accidentally placed on a conductive surface. A proper enclosure for the Pocket State Machine will be added soon.
-
-Attach the printed sheet with 4 3/8-inch 4-40 screws, and 4-40 nuts. A 1/8-inch spacer on each screw is recommended, to enforce a small gap between the plastic and the board.
