@@ -170,7 +170,7 @@
 <text x="71.882" y="35.306" size="2.54" layer="112">+</text>
 <wire x1="0" y1="19.558" x2="0" y2="19.685" width="0" layer="20"/>
 <text x="50.038" y="3.302" size="1.524" layer="21" font="vector" rot="R180">Bpod HiFi Module</text>
-<text x="1.27" y="16.51" size="1.524" layer="21" font="vector" rot="R270">rev1.0</text>
+<text x="1.27" y="16.51" size="1.524" layer="21" font="vector" rot="R270">rev1.3</text>
 <polygon width="1.016" layer="42">
 <vertex x="6.223" y="55.626"/>
 <vertex x="6.223" y="50.673"/>
@@ -226,10 +226,15 @@
 <vertex x="77.851" y="49.784"/>
 <vertex x="77.851" y="55.499"/>
 </polygon>
-<text x="23.749" y="29.464" size="1.778" layer="21" font="vector" rot="R180">Teensy 4.1</text>
+<text x="21.336" y="28.956" size="1.524" layer="21" font="vector" rot="R180">Teensy 4.1</text>
 <text x="69.088" y="52.451" size="1.016" layer="21" font="vector" rot="R180">SYNC</text>
 <text x="65.405" y="50.038" size="1.016" layer="21" font="vector">OUTPUT</text>
-<text x="63.754" y="24.257" size="1.778" layer="21">*</text>
+<text x="63.5" y="24.003" size="1.778" layer="21">*</text>
+<text x="55.753" y="48.133" size="1.27" layer="21" font="vector">J1</text>
+<text x="64.389" y="47.625" size="1.27" layer="21" font="vector" rot="R90">J2</text>
+<text x="65.151" y="6.477" size="1.27" layer="21" font="vector" rot="R90">J3</text>
+<text x="22.987" y="48.006" size="1.27" layer="21" font="vector">Pins Face Upwards</text>
+<wire x1="65.151" y1="29.083" x2="65.151" y2="27.559" width="0.1524" layer="21" curve="-143.398488"/>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -7125,8 +7130,10 @@ einem neuen Namen ab.</description>
 <vertex x="60.325" y="26.924"/>
 <vertex x="60.325" y="55.245"/>
 </polygon>
-<via x="71.12" y="21.717" extent="1-16" drill="0.55"/>
-<wire x1="71.12" y1="23.79345" x2="71.12" y2="21.717" width="0.635" layer="1"/>
+<via x="70.485" y="21.463" extent="1-16" drill="0.55"/>
+<wire x1="71.12" y1="23.79345" x2="71.12" y2="21.844" width="0.635" layer="1"/>
+<wire x1="71.12" y1="21.844" x2="70.739" y2="21.463" width="0.635" layer="1"/>
+<wire x1="70.739" y1="21.463" x2="70.485" y2="21.463" width="0.635" layer="1"/>
 <wire x1="62.233" y1="17.272" x2="62.36" y2="17.399" width="0.762" layer="1"/>
 <wire x1="63.881" y1="17.399" x2="62.36" y2="17.399" width="0.762" layer="1"/>
 <via x="63.881" y="17.399" extent="1-16" drill="0.55"/>
@@ -7161,6 +7168,10 @@ einem neuen Namen ab.</description>
 <contactref element="T4_1" pad="AGND"/>
 <contactref element="T4_1" pad="22/A8"/>
 <contactref element="T4_1" pad="23/A9"/>
+<contactref element="IC2" pad="4"/>
+<wire x1="69.85" y1="23.79345" x2="69.85" y2="21.844" width="0.635" layer="1"/>
+<wire x1="70.485" y1="21.463" x2="70.231" y2="21.463" width="0.635" layer="1"/>
+<wire x1="70.231" y1="21.463" x2="69.85" y2="21.844" width="0.635" layer="1"/>
 </signal>
 <signal name="TXD">
 <contactref element="RPI1" pad="8"/>

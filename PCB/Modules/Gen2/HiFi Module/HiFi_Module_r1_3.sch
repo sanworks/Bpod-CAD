@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3366,6 +3366,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-15.24" y1="119.38" x2="-15.24" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="119.38" x2="-15.24" y2="119.38" width="0.1524" layer="91"/>
 <junction x="-15.24" y="119.38"/>
+<pinref part="IC2" gate="A" pin="VIB"/>
+<wire x1="-12.7" y1="121.92" x2="-20.32" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="121.92" x2="-20.32" y2="106.426" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="106.426" x2="-17.272" y2="106.426" width="0.1524" layer="91"/>
+<junction x="-17.272" y="106.426"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
