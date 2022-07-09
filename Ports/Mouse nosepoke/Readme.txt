@@ -9,3 +9,5 @@ http://colorfabb.com/xt
 -The port requires two holes to be tapped with an M4 bottom tap.
 
 -The mount secures the port in a 20mm x 11mm rectangular hole in a 3mm-thick wall, and provides mounting holes on the outside of the wall for the breakout board.
+
+-The 'Minimal' port mount will anchor the port to the behavior chamber wall, but will not mount the port interface board on the outside. This is useful if the wall needs to be clear (e.g. for an LCD display mounted above the pokes on the outside of the chamber)
