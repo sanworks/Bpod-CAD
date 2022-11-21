@@ -1,0 +1,2 @@
+Board Thickness: 1.6mm
+Copper Weight: Outer = 1, Inner = 1
