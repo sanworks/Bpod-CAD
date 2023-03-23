@@ -1,0 +1,1 @@
+Note: With the exception of the 'For FSM r0.5' folder, modules in this folder are compatible with state machine r0.7 or newer.
