@@ -11,5 +11,9 @@ Options: Half Cut, Output Directly to Printer Driver. ALL OTHERS UNCHECKED
 
 ---Instructions---
 Print labels
-Cut to size on dotted lines
-Peel and stick on label space above wire sockets
+
+5V and DIO: Cut to size on dotted lines.
+
+AIN: DO NOT cut dotted lines dividing the channels. Instead, cut label length-wise across the tops and bottoms of the dotted lines.
+
+Peel and stick on label space above wire entry holes on wire terminals.
