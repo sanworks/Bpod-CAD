@@ -1,0 +1,8 @@
+r1_5: 
+-Reduced diameter of BNC mount holes to improve alignment. 
+
+r1_4:
+-Added 470pf capacitor to BNC output 
+
+r1_3: 
+-Initial design

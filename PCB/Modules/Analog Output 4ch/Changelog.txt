@@ -1,0 +1,6 @@
+r2.1: 
+-Reduced diameter of BNC mount holes to improve alignment. 
+-Increased diameter of DC/DC converter through-hole pads to simplify assembly
+-Optimized layout of DAC power traces.
+r2.0: 
+-Initial design
