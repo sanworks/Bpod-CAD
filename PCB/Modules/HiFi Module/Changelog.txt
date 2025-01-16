@@ -1,3 +1,7 @@
+r1_7:
+-Modified the board to use Teensy 4.1 with headers pre-installed
+-Note: Beginning with r1_7, the unused PSRAM chip on Teensy is omitted in Sanworks builds
+
 r1_5: 
 -Reduced diameter of BNC mount holes to improve alignment. 
 
