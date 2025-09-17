@@ -1,0 +1,1 @@
+Beginning in 2025, new 3D designs will be given as .f3z files for use with Autodesk Fusion 360, as well as .stl. 2D designs will continue to be given as .svg for use with Inkscape and other vector graphics programs. 
